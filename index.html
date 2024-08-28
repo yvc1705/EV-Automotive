@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automative website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Include the styles directly here for simplicity */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('images/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .model-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .model-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-footer .btn {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .card-footer .btn:hover {
+            background-color: #0056b3;
+            border-color: #004b8d;
+        }
+
+        #comparisonResults {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 20px;
+            color: white;
+        }
+
+        .safety-rules {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .safety-rules h2 {
+            margin-bottom: 20px;
+        }
+
+        .safety-rules ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<link href="images/favicon.png" rel="icon">
+
+
+<section id="ev-models-description" class="description-container">
+    <p>.</p>
+    <p></p>
+
+    <h2>Electric Vehicle Models</h2>
+    <div class="description">
+        <p>Explore our range of electric vehicle models that offer top-notch performance, efficiency, and cutting-edge technology. Each model is designed to meet various needs and preferences, providing exceptional driving experiences with sustainable energy solutions.</p>
+    </div>
+</section>
+
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">EV Automotive</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#models">Our Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparison">Compare Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#safety-rules" id="safetyRulesBtn">Safety Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="models" class="container my-5">
+        <h2 class="text-center mb-4">Our Models</h2>
+        <div class="row">
+            <!-- Tesla Model S Plaid -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model1.jpg" class="card-img-top" alt="Tesla Model S Plaid">
+                    <div class="card-body">
+                        <h5 class="card-title">Tesla Model S Plaid</h5>
+                        <p class="card-text">The Tesla Model S Plaid is renowned for its incredible acceleration and long range.</p>
+                        <ul>
+                            <li>Battery: 100 kWh</li>
+                            <li>Range: 390 miles</li>
+                            <li>0-60 mph: 1.99 seconds</li>
+                            <li>Top Speed: 200 mph</li>
+                            <li>Price: $109,990</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(5.0/5 stars, 200 reviews)</span>
+                        </div>
+                        <p class="model-description">Features a minimalist interior, advanced autopilot, and is one of the fastest production cars in the world.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.tesla.com/models" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Lucid Air Dream Edition -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model2.jpg" class="card-img-top" alt="Lucid Air Dream Edition">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucid Air Dream Edition</h5>
+                        <p class="card-text">The Lucid Air Dream Edition combines luxury with impressive performance and range.</p>
+                        <ul>
+                            <li>Battery: 113 kWh</li>
+                            <li>Range: 503 miles</li>
+                            <li>0-60 mph: 2.5 seconds</li>
+                            <li>Top Speed: 168 mph</li>
+                            <li>Price: $169,000</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(5.0/5 stars, 180 reviews)</span>
+                        </div>
+                        <p class="model-description">Features a high-tech interior and is designed to compete with high-end Tesla models.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://lucidmotors.com/en-sa/air/dream-edition" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Porsche Taycan Turbo S -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model3.jpg" class="card-img-top" alt="Porsche Taycan Turbo S">
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche Taycan Turbo S</h5>
+                        <p class="card-text">The Porsche Taycan Turbo S emphasizes driving dynamics and luxury performance.</p>
+                        <ul>
+                            <li>Battery: 93.4 kWh</li>
+                            <li>Range: 246 miles</li>
+                            <li>0-60 mph: 2.6 seconds</li>
+                            <li>Top Speed: 161 mph</li>
+                            <li>Price: $185,000</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(5.0/5 stars, 210 reviews)</span>
+                        </div>
+                        <p class="model-description">Combines sporty handling with a high-tech and elegant design.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.porsche.com/international/models/taycan/taycan-models/taycan-turbo-s/" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ford Mustang Mach-E -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model4.jpg" class="card-img-top" alt="Ford Mustang Mach-E">
+                    <div class="card-body">
+                        <h5 class="card-title">Ford Mustang Mach-E</h5>
+                        <p class="card-text">The Ford Mustang Mach-E offers a blend of performance and practicality for urban environments.</p>
+                        <ul>
+                            <li>Battery: 68 kWh or 88 kWh</li>
+                            <li>Range: 230 miles (standard) to 312 miles (extended range)</li>
+                            <li>0-60 mph: 3.5 seconds (GT version)</li>
+                            <li>Top Speed: 130 mph</li>
+                            <li>Price: $43,995 (base model) to $61,000 (GT)</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(4.8/5 stars, 170 reviews)</span>
+                        </div>
+                        <p class="model-description">Features a Mustang-inspired design with multiple configurations for different needs.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.ford.com/suvs/mach-e/" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Rivian R1T -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model5.jpg" class="card-img-top" alt="Rivian R1T">
+                    <div class="card-body">
+                        <h5 class="card-title">Rivian R1T</h5>
+                        <p class="card-text">The Rivian R1T is an electric adventure truck designed for off-road capability.</p>
+                        <ul>
+                            <li>Battery: 105 kWh, 135 kWh, or 180 kWh</li>
+                            <li>Range: 314 miles (180 kWh battery)</li>
+                            <li>0-60 mph: 3.0 seconds (Launch Edition)</li>
+                            <li>Top Speed: 125 mph</li>
+                            <li>Price: $73,000</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(4.9/5 stars, 160 reviews)</span>
+                        </div>
+                        <p class="model-description">Offers rugged features and a high-tech interior, ideal for outdoor enthusiasts.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://rivian.com/r1t" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Chevrolet Bolt EV -->
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model6.jpg" class="card-img-top" alt="Chevrolet Bolt EV">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Bolt EV</h5>
+                        <p class="card-text">The Chevrolet Bolt EV is an affordable electric vehicle with a respectable range.</p>
+                        <ul>
+                            <li>Battery: 66 kWh</li>
+                            <li>Range: 259 miles</li>
+                            <li>0-60 mph: 6.5 seconds</li>
+                            <li>Top Speed: 93 mph</li>
+                            <li>Price: $26,595</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star-half-alt"></span>
+                            <span>(4.3/5 stars, 140 reviews)</span>
+                        </div>
+                        <p class="model-description">Offers good driving dynamics and advanced safety features at an affordable price.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.chevrolet.ca/en/electric/bolt-ev" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="comparison" class="container my-5">
+        <h2 class="text-center mb-4">Compare Models</h2>
+        <form id="comparisonForm">
+            <div class="form-group">
+                <label for="modelSelect1">Select Model 1</label>
+                <select id="modelSelect1" class="form-control">
+                    <option value="model1">Model 1 - Tesla Model S Plaid</option>
+                    <option value="model2">Model 2 - Lucid Air Dream Edition</option>
+                    <option value="model3">Model 3 - Porsche Taycan Turbo Sr</option>
+                    <option value="model4">Model 4 - Ford Mustang Mach-E</option>
+                    <option value="model5">Model 5 - Rivian R1T</option>
+                    <option value="model6">Model 6 - Chevrolet Bolt EV</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modelSelect2">Select Model 2</label>
+                <select id="modelSelect2" class="form-control">
+                    <option value="model1">Model 1 - Tesla Model S Plaid</option>
+                    <option value="model2">Model 2 - Lucid Air Dream Edition</option>
+                    <option value="model3">Model 3 - Porsche Taycan Turbo Sr</option>
+                    <option value="model4">Model 4 - Ford Mustang Mach-E</option>
+                    <option value="model5">Model 5 - Rivian R1T</option>
+                    <option value="model6">Model 6 - Chevrolet Bolt EV</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="compareModels()">Compare</button>
+        </form>
+        <div id="comparisonResults" class="mt-4"></div>
+    </section>
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Rules</title>
+    <style>
+        .safety-rules {
+            text-align: left; /* Aligns text to the left */
+            color: white; /* Ensures text is visible on a dark background */
+            margin: 20px auto; /* Centers the section horizontally and adds margin */
+            padding: 0 20px; /* Adds horizontal padding to avoid text touching edges */
+        }
+        .safety-rules .description {
+            margin-bottom: 20px; /* Adds space between the description and the list */
+        }
+        .safety-rules ul {
+            list-style-type: none; /* Removes the default bullet points */
+            padding: 0; /* Removes default padding */
+            margin: 0; /* Removes default margin */
+        }
+        .safety-rules ul li {
+            margin: 10px 0; /* Adds vertical spacing between list items */
+        }
+    </style>
+</head>
+<body>
+    <section id="safety-rules" class="safety-rules container my-5">
+        <h2>Safety Rules</h2>
+        <div class="description">
+            <p>Ensure you follow these safety rules when operating or maintaining your vehicle:</p>
+        </div>
+        <ul>
+            <li>Always wear your seatbelt.</li>
+            <li>Follow traffic signals and road signs.</li>
+            <li>Maintain a safe distance from other vehicles.</li>
+            <li>Regularly check tire pressure and fluid levels.</li>
+            <li>Never use a mobile phone while driving.</li>
+        </ul>
+    </section>
+</body>
+    
+    
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scroll for the Safety Rules button
+        document.getElementById('safetyRulesBtn').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('safety-rules').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Function to compare models
+        function compareModels() {
+            const model1 = document.getElementById('modelSelect1').value;
+            const model2 = document.getElementById('modelSelect2').value;
+
+            const comparisons = {
+                model1: {
+                    name: 'Model 1 - Tesla Model S Plaid',
+                    battery: '75 kWh',
+                    range: '350 miles',
+                    zeroToSixty: '6.0 seconds',
+                    topSpeed: '140 mph',
+                },
+                model2: {
+                    name: 'Model 2 - Lucid Air Dream Edition',
+                    battery: '65 kWh',
+                    range: '300 miles',
+                    zeroToSixty: '6.5 seconds',
+                    topSpeed: '130 mph',
+                },
+                model3: {
+                    name: 'Model 3 - Porsche Taycan Turbo Sr',
+                    battery: '85 kWh',
+                    range: '280 miles',
+                    zeroToSixty: '3.5 seconds',
+                    topSpeed: '155 mph',
+                },
+                model4: {
+                    name: 'Model 4 - Ford Mustang Mach-E',
+                    battery: '90 kWh',
+                    range: '400 miles',
+                    zeroToSixty: '5.5 seconds',
+                    topSpeed: '145 mph',
+                },
+                model5: {
+                    name: 'Model 5 - Rivian R1T',
+                    battery: '80 kWh',
+                    range: '320 miles',
+                    zeroToSixty: '5.0 seconds',
+                    topSpeed: '150 mph',
+                },
+                model6: {
+                    name: 'Model 6 - Chevrolet Bolt EV',
+                    battery: '50 kWh',
+                    range: '200 miles',
+                    zeroToSixty: '7.0 seconds',
+                    topSpeed: '120 mph',
+                }
+            };
+
+            const result = `
+                <h3>Comparison: ${comparisons[model1].name} vs ${comparisons[model2].name}</h3>
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>${comparisons[model1].name}</th>
+                            <th>${comparisons[model2].name}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Battery</td>
+                            <td>${comparisons[model1].battery}</td>
+                            <td>${comparisons[model2].battery}</td>
+                        </tr>
+                        <tr>
+                            <td>Range</td>
+                            <td>${comparisons[model1].range}</td>
+                            <td>${comparisons[model2].range}</td>
+                        </tr>
+                        <tr>
+                            <td>0-60 mph</td>
+                            <td>${comparisons[model1].zeroToSixty}</td>
+                            <td>${comparisons[model2].zeroToSixty}</td>
+                        </tr>
+                        <tr>
+                            <td>Top Speed</td>
+                            <td>${comparisons[model1].topSpeed}</td>
+                            <td>${comparisons[model2].topSpeed}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+            document.getElementById('comparisonResults').innerHTML = result;
+        }
+    </script>
+
+<footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Yash</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <div class="social-links text-center">
+          <a href="https://twitter.com/YashChopade" class="twitter" target="_blank" style="margin: 0 10px;"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/yash.chopade.37/" class="facebook" target="_blank" style="margin: 0 10px;"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/yash_17053/" class="instagram" target="_blank" style="margin: 0 10px;"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.skype.com/YashChopade" class="skype" target="_blank" style="margin: 0 10px;"><i class="bi bi-skype"></i></a>
+          <a href="https://www.linkedin.com/in/yash-chopade-a77063184" class="linkedin" target="_blank" style="margin: 0 10px;"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <head>
+    <!-- Other head content -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+  </head>
+  
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+</body>
+</html>

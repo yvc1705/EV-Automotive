@@ -1,0 +1,176 @@
+.description-container {
+    background-color: black; /* Sets the background color to black */
+    text-align: center; /* Center-aligns the text within the section */
+    color: white; /* Ensures text is visible on a dark background */
+    margin: 20px auto; /* Centers the section horizontally and adds margin */
+    padding: 20px; /* Adds padding around the section */
+}
+
+.description-container .description {
+    max-width: 800px; /* Limits the width of the description for better readability */
+    margin: 0 auto; /* Centers the description within the container */
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Models Section */
+.model-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.model-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.model-card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.ratings {
+    margin-top: 10px;
+}
+
+.fas.fa-star {
+    color: gold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Comparison Section */
+.table-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.table-dark th,
+.table-dark td {
+    text-align: center;
+}
+
+/* Safety Rules Section */
+.safety-rules {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+}
+
+.safety-rules h2 {
+    margin-bottom: 20px;
+}
+
+.safety-rules ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.safety-rules .description {
+    margin-bottom: 15px;
+}
+
+/* Contact Form */
+form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    color: #fff;
+}
+
+form input,
+form textarea {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Animated Star Ratings */
+.star-rating {
+    display: flex;
+    font-size: 1.5em;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.star-rating .star {
+    transition: color 0.3s ease;
+}
+
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+    color: gold;
+}
+
+.star-rating .filled {
+    color: gold;
+}
+
+.social-links a {
+    margin: 0 10px; /* Adjust the space between icons as needed */
+    color: #fff; /* Optional: Set icon color to white */
+    text-decoration: none; /* Optional: Remove underline from icons */
+  }
+  
+  .social-links a:hover {
+    color: #f0f0f0; /* Optional: Change color on hover */
+  }
+  
+
