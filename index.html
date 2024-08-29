@@ -90,6 +90,8 @@
 
 
 
+
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -354,7 +356,7 @@
 </head>
 <body>
     <section id="safety-rules" class="safety-rules container my-5">
-        <h2>Safety Rules</h2>
+        <center><h2>Safety Rules</h2></center>
         <div class="description">
             <p>Ensure you follow these safety rules when operating or maintaining your vehicle:</p>
         </div>
@@ -516,5 +518,184 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('images/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 10px;
+        }
+
+        .model-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 20px;
+        }
+
+        .model-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-footer .btn {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .card-footer .btn:hover {
+            background-color: #0056b3;
+            border-color: #004b8d;
+        }
+
+        #comparisonResults {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .safety-rules {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 5px;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .safety-rules h2 {
+            margin-bottom: 20px;
+        }
+
+        .safety-rules ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .comparison-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .comparison-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">EV Automotive</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#models">Our Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparison">Compare Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#safety-rules" id="safetyRulesBtn">Safety Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="models" class="container my-5">
+        <h2 class="text-center mb-4">Our Models</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card model-card">
+                    <img src="images/model1.jpg" class="card-img-top" alt="Tesla Model S Plaid">
+                    <div class="card-body">
+                        <h5 class="card-title">Tesla Model S Plaid</h5>
+                        <p class="card-text">The Tesla Model S Plaid is renowned for its incredible acceleration and long range.</p>
+                        <ul>
+                            <li>Battery: 100 kWh</li>
+                            <li>Range: 390 miles</li>
+                            <li>0-60 mph: 1.99 seconds</li>
+                            <li>Top Speed: 200 mph</li>
+                            <li>Price: $109,990</li>
+                        </ul>
+                        <div class="ratings">
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span class="fas fa-star"></span>
+                            <span>(5.0/5 stars, 200 reviews)</span>
+                        </div>
+                        <p class="model-description">Features a minimalist interior, advanced autopilot, and is one of the fastest production cars in the world.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.tesla.com/models" class="btn btn-primary btn-block">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional model cards go here -->
+
+        </div>
+    </section>
+
+    <section id="comparison" class="container my-5">
+        <h2 class="text-center mb-4">Compare Models</h2>
+        <button id="compareBtn" class="btn btn-primary btn-block">Compare Selected Models</button>
+        <div id="comparisonResults" class="mt-4">
+            <!-- Comparison results will be injected here -->
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
